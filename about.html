@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Sweet Crumbs</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #fffaf5;
+            color: #3d2925;
+            font-family: Georgia, serif;
+        }
+
+        header {
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eadbd2;
+        }
+
+        .logo {
+            color: #8b4b45;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: #4d3630;
+            font-family: Arial, sans-serif;
+        }
+
+        .about {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            padding: 80px 8%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .about img {
+            width: 48%;
+            border-radius: 10px;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        .content h1 {
+            color: #713b37;
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-family: Arial, sans-serif;
+            line-height: 1.8;
+            color: #66504a;
+            margin-bottom: 18px;
+        }
+
+        .values {
+            padding: 70px 8%;
+            background: #f6e9e1;
+            text-align: center;
+        }
+
+        .values h2 {
+            color: #713b37;
+            font-size: 36px;
+            margin-bottom: 35px;
+        }
+
+        .value-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .value {
+            background: #fffaf5;
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        .value h3 {
+            color: #8b4b45;
+            margin-bottom: 12px;
+        }
+
+        .value p {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #66504a;
+        }
+
+        footer {
+            background: #3d2925;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            font-family: Arial, sans-serif;
+        }
+
+        @media(max-width: 750px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .about {
+                flex-direction: column;
+            }
+
+            .about img {
+                width: 100%;
+            }
+
+            .value-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Sweet Crumbs</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="about">
+
+    <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=900&q=80"
+         alt="Baker preparing pastries">
+
+    <div class="content">
+        <h1>Our Story</h1>
+
+        <p>
+            Sweet Crumbs began with a simple idea: create pastries that bring
+            people together. What started as a small home kitchen has grown
+            into a bakery dedicated to beautiful, delicious creations.
+        </p>
+
+        <p>
+            Every cake, pastry and confection is carefully prepared using
+            quality ingredients and traditional baking techniques.
+        </p>
+
+        <p>
+            From everyday treats to special celebrations, we believe that
+            every occasion deserves something sweet.
+        </p>
+    </div>
+
+</section>
+
+<section class="values">
+
+    <h2>What We Believe</h2>
+
+    <div class="value-grid">
+
+        <div class="value">
+            <h3>Quality</h3>
+            <p>
+                We carefully select our ingredients and maintain high standards
+                throughout every step of the baking process.
+            </p>
+        </div>
+
+        <div class="value">
+            <h3>Craftsmanship</h3>
+            <p>
+                Our pastries are made with patience, creativity and attention
+                to detail.
+            </p>
+        </div>
+
+        <div class="value">
+            <h3>Happiness</h3>
+            <p>
+                Our goal is simple: create delicious treats that make ordinary
+                moments feel special.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>&copy; 2026 Sweet Crumbs. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

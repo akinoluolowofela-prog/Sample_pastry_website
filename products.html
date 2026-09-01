@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Sweet Crumbs</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            background: #fffaf5;
+            color: #3d2925;
+        }
+
+        header {
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eadbd2;
+        }
+
+        .logo {
+            color: #8b4b45;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: #4d3630;
+            font-family: Arial, sans-serif;
+        }
+
+        .page-title {
+            text-align: center;
+            padding: 70px 20px 40px;
+        }
+
+        .page-title h1 {
+            color: #713b37;
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .page-title p {
+            font-family: Arial, sans-serif;
+            color: #765d56;
+        }
+
+        .catalog {
+            padding: 20px 8% 80px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #eadbd2;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 22px;
+        }
+
+        .card h3 {
+            color: #713b37;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #765d56;
+        }
+
+        .price {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #8b4b45;
+            font-family: Arial, sans-serif;
+        }
+
+        footer {
+            background: #3d2925;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            font-family: Arial, sans-serif;
+        }
+
+        @media(max-width: 800px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(max-width: 550px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            nav a {
+                margin: 0 6px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Sweet Crumbs</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="page-title">
+    <h1>Our Collection</h1>
+    <p>Handcrafted pastries and confectionery for every occasion.</p>
+</section>
+
+<section class="catalog">
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80">
+            <div class="card-content">
+                <h3>Chocolate Cake</h3>
+                <p>Moist chocolate sponge with layers of chocolate cream.</p>
+                <span class="price">$28</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=700&q=80">
+            <div class="card-content">
+                <h3>Strawberry Cake</h3>
+                <p>Light vanilla sponge, fresh strawberries and cream.</p>
+                <span class="price">$30</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=700&q=80">
+            <div class="card-content">
+                <h3>Butter Croissant</h3>
+                <p>Classic French-style pastry with delicate flaky layers.</p>
+                <span class="price">$4</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1576618148400-a0a0c5f0a7c5?auto=format&fit=crop&w=700&q=80">
+            <div class="card-content">
+                <h3>Macarons</h3>
+                <p>Colorful almond cookies filled with flavored ganache.</p>
+                <span class="price">$18 / Box</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=700&q=80">
+            <div class="card-content">
+                <h3>Chocolate Cookies</h3>
+                <p>Freshly baked cookies with generous chocolate chunks.</p>
+                <span class="price">$12 / Box</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=700&q=80">
+            <div class="card-content">
+                <h3>Cupcakes</h3>
+                <p>Soft vanilla cupcakes topped with creamy frosting.</p>
+                <span class="price">$20 / Box</span>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>&copy; 2026 Sweet Crumbs. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
